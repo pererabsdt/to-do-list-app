@@ -20,6 +20,11 @@ This project was created with the help of [Mitch Koko's YouTube tutorial](https:
 - Hive (for local storage)
 
 ## 📸 Screenshots
+<div style="display: flex; justify-content: center;">
+   <img src="screenshots/home_page.png" alt="Home Page" width="300">
+   <img src="screenshots/add_task.png" alt="Add a new task" width="300">
+   <img src="screenshots/delete_task.png" alt="Delete a task" width="300">
+</div>
 
 
 
