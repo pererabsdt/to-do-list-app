@@ -1,16 +1,51 @@
-# to_do_app
+# 📌 Simple To-Do List App
 
-A new Flutter project.
+A minimal and lightweight to-do list app built using Flutter. This app helps users organize their tasks efficiently, with local storage powered by Hive.
 
-## Getting Started
+## 📺 Reference
 
-This project is a starting point for a Flutter application.
+This project was created with the help of [Mitch Koko's YouTube tutorial](https://www.youtube.com/watch?v=mMgr47QBZWA).
 
-A few resources to get you started if this is your first Flutter project:
+## ✨ Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 📌 Add, edit, and delete tasks
+- ✅ Mark tasks as completed
+- 💾 Persistent local storage using Hive
+- 🎨 Simple and clean UI
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Technologies Used
+
+- Flutter
+- Dart
+- Hive (for local storage)
+
+## 📸 Screenshots
+
+
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone  https://github.com/pererabsdt/to-do-list-app.git
+   cd to-do-list-app
+   ```
+
+2. Install dependencies:
+   ```bash
+   flutter pub get
+   ```
+
+3. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## 📌 Notes
+
+- Ensure you have Flutter installed. You can check by running `flutter --version`
+- If Hive storage doesn't persist, try running `flutter clean` and restarting the app
+
+## 📝 License
+
+Feel free to use and modify this project. Attribution is appreciated! 😊
