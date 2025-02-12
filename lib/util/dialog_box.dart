@@ -16,7 +16,7 @@ class DialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-        backgroundColor: Colors.yellow[300],
+        backgroundColor: Colors.white, // White background
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8),
         ),
@@ -28,7 +28,9 @@ class DialogBox extends StatelessWidget {
                 TextField(
                   controller: controller,
                   decoration: InputDecoration(
-                    border: OutlineInputBorder(),
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Color(0xFF6C5CE7)), // Primary purple
+                    ),
                     hintText: "Add a new task",
                   ),
                 ),
