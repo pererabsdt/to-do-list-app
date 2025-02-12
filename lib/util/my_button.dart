@@ -14,9 +14,20 @@ class MyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialButton(
       onPressed: onPressed,
-      color: Color(0xFF6C5CE7), // Primary purple
+      color: Color(0xFF6C5CE7),
       textColor: Colors.white,
-      child: Text(text),
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10),
+      ),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+      child: Text(
+        text,
+        style: TextStyle(
+          fontFamily: 'Poppins',
+          fontSize: 15,
+          fontWeight: FontWeight.w500,
+        ),
+      ),
     );
   }
 }

@@ -16,31 +16,46 @@ class DialogBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AlertDialog(
-        backgroundColor: Colors.white, // White background
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
-        ),
-        content: SizedBox(
-          height: 120,
-          child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                TextField(
-                  controller: controller,
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderSide: BorderSide(color: Color(0xFF6C5CE7)), // Primary purple
-                    ),
-                    hintText: "Add a new task",
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Row(mainAxisAlignment: MainAxisAlignment.end, children: [
-                  MyButton(text: "Save", onPressed: onSave),
-                  const SizedBox(width: 8),
-                  MyButton(text: "Cancel", onPressed: onCancel)
-                ]),
-              ]),
-        ));
+      backgroundColor: Colors.white,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(20),
+      ),
+      content: SizedBox(
+        height: 140,
+        child:
+            Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
+          TextField(
+            controller: controller,
+            style: TextStyle(
+              fontFamily: 'Poppins',
+              fontSize: 16,
+            ),
+            decoration: InputDecoration(
+              border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Color(0xFF6C5CE7)),
+              ),
+              focusedBorder: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(12),
+                borderSide: BorderSide(color: Color(0xFF6C5CE7), width: 2),
+              ),
+              hintText: "Add a new task",
+              hintStyle: TextStyle(
+                fontFamily: 'Poppins',
+                color: Colors.grey[400],
+              ),
+              contentPadding:
+                  EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+            ),
+          ),
+          const SizedBox(height: 20),
+          Row(mainAxisAlignment: MainAxisAlignment.end, children: [
+            MyButton(text: "Save", onPressed: onSave),
+            const SizedBox(width: 8),
+            MyButton(text: "Cancel", onPressed: onCancel)
+          ]),
+        ]),
+      ),
+    );
   }
 }

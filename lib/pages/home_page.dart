@@ -72,15 +72,29 @@ class _HomePageState extends State<HomePage> {
         title: Center(
           child: Text(
             'My To Do List',
-            style: TextStyle(fontSize: 25, color: Colors.white),
+            style: TextStyle(
+              fontSize: 28,
+              fontFamily: 'Poppins',
+              fontWeight: FontWeight.w600,
+              letterSpacing: 0.5,
+            ),
           ),
         ),
         elevation: 0,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.vertical(
+            bottom: Radius.circular(20),
+          ),
+        ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: createNewTask,
-        backgroundColor: Color(0xFFFF9F43), // Orange accent
-        child: Icon(Icons.add, color: Colors.white),
+        backgroundColor: Color(0xFFFF9F43),
+        elevation: 4,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(16),
+        ),
+        child: Icon(Icons.add, size: 32),
       ),
       body: ListView.builder(
         itemCount: db.toDoList.length,
