@@ -38,7 +38,7 @@ class ToDoTile extends StatelessWidget {
             borderRadius: BorderRadius.circular(15),
             boxShadow: [
               BoxShadow(
-                color: Colors.black.withOpacity(0.08),
+                color: Colors.black.withValues(alpha: 0.08),
                 offset: Offset(0, 4),
                 blurRadius: 10,
               ),
@@ -58,7 +58,7 @@ class ToDoTile extends StatelessWidget {
                 child: Text(
                   taskName,
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 17,
                     fontFamily: 'Poppins',
                     fontWeight:
                         taskCompleted ? FontWeight.normal : FontWeight.w500,

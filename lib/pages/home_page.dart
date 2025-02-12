@@ -67,23 +67,26 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFF8F7FF),
-      appBar: AppBar(
-        backgroundColor: Color(0xFF6C5CE7),
-        title: Center(
-          child: Text(
-            'My To Do List',
-            style: TextStyle(
-              fontSize: 28,
-              fontFamily: 'Poppins',
-              fontWeight: FontWeight.w600,
-              letterSpacing: 0.5,
+      appBar: PreferredSize(
+        preferredSize: Size.fromHeight(70),
+        child: AppBar(
+          backgroundColor: Color(0xFF6C5CE7),
+          title: Center(
+            child: Text(
+              'My To Do List',
+              style: TextStyle(
+                fontSize: 28,
+                fontFamily: 'Poppins',
+                fontWeight: FontWeight.w600,
+                letterSpacing: 0.5,
+              ),
             ),
           ),
-        ),
-        elevation: 0,
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.vertical(
-            bottom: Radius.circular(20),
+          elevation: 10,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.vertical(
+              bottom: Radius.elliptical(10, 5),
+            ),
           ),
         ),
       ),
